@@ -112,8 +112,9 @@ h4 {
 footer {
   font-size: 12px;
   font-family: "Nunito", sans-serif;
-  color: white;
-  top: 495px;
+  font-weight: bold;
+  color: black;
+  top: 542px;
   padding: 40px;
   position: absolute;
 }
