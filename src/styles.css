@@ -26,17 +26,23 @@ h2 {
 h3 {
   font-family: "Nunito", sans-serif;
   font-size: 15px !important;
-  top: 240px;
+  top: 235px;
   padding: 40px;
   line-height: 1.5 !important;
+  text-transform: capitalize !important;
 }
 
 h4 {
   font-family: "Nunito", sans-serif;
   font-size: 20px !important;
-  top: 320px;
+  top: 350px;
   padding: 40px;
   font-weight: bold;
+}
+
+#description{
+  font-weight: bold;
+  font-size: 30px !important;
 }
 
 .containerAll {
@@ -67,12 +73,11 @@ h4 {
   float: left;
 }
 
-.fa-cloud-sun {
-  color: white;
+#icon {
   position: absolute;
-  top: 210px;
-  left: 370px;
-  font-size: 110px;
+  top: 200px;
+  left: 365px;
+  width: 150px !important;
 }
 
 .degreesMain {
@@ -93,7 +98,7 @@ h4 {
   font-family: "Nunito", sans-serif;
   font-size: 15px !important;
   float:left;
-  top: 400px;
+  top: 435px;
 }
 
 .fa-cloud-showers-heavy,

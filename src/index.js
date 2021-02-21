@@ -49,12 +49,21 @@ function showTemperature(response) {
   city.value = " ";
   let h2 = document.querySelector("h2");
   h2.innerHTML = response.data.name;
+
+  let iconElement = document.querySelector("#icon");
+  iconElement.setAttribute("src", `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`);
+  
+  let descriptionElement = document.querySelector("#description");
   let humidity = document.querySelector("#humidity");
   let wind = document.querySelector("#wind");
   humidity.innerHTML = response.data.main.humidity;
   wind.innerHTML = response.data.wind.speed;
+  descriptionElement.innerHTML= response.data.weather[0].description;
+  
   let currentTemp = document.querySelector(".degreesMain");
   currentTemp.innerHTML = Math.round(response.data.main.temp) + "ºC";
+
+  
 }
 
 function currentPosition(position){
